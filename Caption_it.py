@@ -4,20 +4,20 @@
 # In[1]:
 
 
-import pandas as pd
+# import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import keras
-import json
+# import matplotlib.pyplot as plt
+# import keras
+# import json
 import pickle
 from keras.applications.vgg16 import VGG16
-from keras.applications.resnet50 import ResNet50, preprocess_input, decode_predictions
+from tensorflow.keras.applications.resnet50 import ResNet50, preprocess_input, decode_predictions
 from keras.preprocessing import image
 from keras.models import Model, load_model
 from keras.preprocessing.sequence import pad_sequences
-from keras.utils import to_categorical
-from keras.layers import Input, Dense, Dropout, Embedding, LSTM
-from keras.layers.merge import add
+# from tensorflow.keras.utils import to_categorical
+# from keras.layers import Input, Dense, Dropout, Embedding, LSTM
+# from keras.layers.merge import add
 
 
 # In[2]:
