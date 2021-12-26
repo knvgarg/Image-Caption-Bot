@@ -1,11 +1,14 @@
 from flask import Flask, render_template, redirect, request
 import Caption_it as cap
-
+import os
 app = Flask(__name__)
 
 @app.route("/",methods=['GET','POST'])
 def index():
     result_dic = {}
+    dir = 'static'
+    for f in os.listdir(dir):
+        os.remove(os.path.join(dir, f))
     if request.method == 'POST':
 
         f = request.files['userfile']
